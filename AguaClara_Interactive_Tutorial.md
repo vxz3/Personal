@@ -18,9 +18,7 @@ You can find a GitHub tutorial [here](https://github.com/AguaClara/aguaclara_tut
 
 1. Below this, write a sentence or two about yourself:
 
-<!--- Fill you answer here. --->
-
-
+My name is Victoria.
 
 
 ## Headers
@@ -44,7 +42,7 @@ To signify a header, use `#`. The more `#` you use, the smaller the header gets.
 
 1. Make a header of similar size as Header 3 with whatever text you want:
 
-<!--- Fill you answer here. --->
+### Header 3
 
 ## Emphasis
 There are several different ways to emphasize text: *italics*, **bold**, ***combined***, and ~~strikethrough~~.
@@ -56,7 +54,10 @@ There are several different ways to emphasize text: *italics*, **bold**, ***comb
 
 1. Write 4 of your favorite words using each type of emphasis:
 
-<!--- Fill you answer here. --->
+*red*
+**yellow**
+***green***
+~~blue~~
 
 
 ## Lists
@@ -68,7 +69,11 @@ Lists are very easy to do. For a bulleted list, use the asterisk and for a numbe
 
 1. Now try it out for yourself. Write down a list of things you hope to achieve this semester, and elaborate on them with sub items:
 
-<!--- Fill you answer here. --->
+* Optimize PACl dosage
+  - Make adsorption model
+  - Test different PACl concentrations
+* Design gravity powered reactor
+* Vary upflow velocity
 
 ## Images
 To input images, you'll either need an image URL or a file path to your image. For AguaClara work, your repository should have a folder for images where you can get an image URL or file path from. In this tutorial, I've made an image folder with a picture in the `aguaclara_tutorial` repository.
@@ -100,7 +105,11 @@ Image with Height and Width Adjusted:
 
 1. Make an images folder in your personal repository, and import an image of your hometown or pet from that folder. Do it unformatted using the image URL and the relative file path method, then do it again but instead change the height and width of your image:
 
-<!--- Fill you answer here. --->
+![NYC](https://github.com/vxz3/Personal/blob/master/Images/images.jpeg?raw=true)
+
+![NYC](/Images/images.jpeg)
+
+<img src="https://github.com/vxz3/Personal/blob/master/Images/images.jpeg?raw=true" height=200 width=150>
 
 
 
@@ -113,7 +122,7 @@ To insert a link, all you have to do is enclose your linked text in `[]` followe
 
 1. Below, write a sentence describing your major, and insert a link to your major's department website.
 
-<!--- Fill you answer here. --->
+I am in chemical engineering. The website can be found [here](http://www.cheme.cornell.edu).
 
 ## Tables
 Tables in Markdown are slightly harder, but there's an automatic function that allows to you make one easily. When working in a `.md` file, all you have to do is type `table` and hit enter. It will initialize a 2 by 2 table, but you can easily increase the width by going to the last column and hitting `Tab` or it's height by clicking in any cell and hitting `Enter`. Notice in the example how the text below the header is justified left, center, and right. This is due to the line below the header. A line with a colon on the far left of the dashes only indicates left justified, colons on both sides of the dashes indicates centered, and a colon on the far right of the dashes indicates right justified.
@@ -143,7 +152,13 @@ When making tables, it's not important that the lines match up. For example, the
 
 1. Create a table listing your 3 favorite animals, foods, books, and places on campus. Try out the different cell justifications:
 
-<!--- Fill you answer here. --->
+
+
+| Animal|  Food | Books | Places |
+|:------ |:--------:|:-----:|:------ |
+| Dog | Pizza |Song of Solomon| Terrace    |
+| Cat|Ice Cream |Inkheart|    Quad    |
+| Rabbit |  Sushi | Harry Potter  |  Olin  |
 
 
 
@@ -162,11 +177,13 @@ For larger code blocks where you report multiple lines of code, you always start
 
 1. Below, write a Python print function with a different string using syntax highlighting:
 
-<!--- Fill you answer here. --->
+`print('Hello!')`
 
 2. Now write a block of Python code for that same print statement:
 
-<!--- Fill you answer here. --->
+```python
+print('Hello!')
+```
 
 
 
@@ -177,7 +194,7 @@ $$ Re_D = \frac{uD}{\nu} $$
 
 1. Try it on your own! Write your favorite equation using LaTeX source code and toggle the LaTeX preview to see it formatted:
 
-<!--- Fill you answer here. --->
+$$ Q = vA $$
 
 
 # Using Python and Running it With Hydrogen in Markdown
@@ -186,6 +203,8 @@ $$ Re_D = \frac{uD}{\nu} $$
 1. Below this, I've copied the code I wrote for the [Python Basics Tutorial](https://github.com/AguaClara/aguaclara_tutorial/wiki/Tutorial:-Python-Basics). You should familiarize yourself with the different Hydrogen commands using this code. For the first line, use `Hydrogen: Run` (`Cmnd + Enter`).
 2. For the second line, use `Hydrogen: Run and Move Down` (`Shift + Enter`).
 3. For the remaining code, highlight it with your cursor and use `Hydrogen: Run`. What is the difference between the three?
+
+Checkmarks v. displaying output
 
 ```python
 from aide_design.play import*
@@ -208,20 +227,37 @@ plt.legend(loc = 'lower right', ncol = 1)
 plt.show()
 ```
 
+
+
+
 ## Python Basics
 These questions are meant to test what you've learned from the Python Basics tutorial. If you need help answering a question, refer there first and use other online resources before seeking a Subteam Lead or RA. Be sure to run all your code with Hydrogen. When you code, make sure your using proper [variable naming](https://github.com/AguaClara/aide_design/wiki/Variable-Naming) and [coding standards](https://github.com/AguaClara/aide_design/wiki/Standards)
 
 1. Write a conditional statement with 3 conditions: when x is 10, when x is 1, and when x is anything other than 1 or 10. For each condition, have your code print what the value is or isn't.
 
-<!--- Fill you answer here. --->
-
-
+```python
+if x == 10:
+  print('x is 10')
+elif x == 1:
+  print('x is 1')
+else:
+  print('x is neither 10 nor 1')  
+```
 
 
 2. Write a `for` loop that takes a variable with an initial value of 0, and adds the current index to the previous value of that variable (i.e. you variable should grow in size every iteration). Perform the iteration 20 times, and have the final value be printed at the end.
 
-<!--- Fill you answer here. --->
+```python
 
+x =0
+i =1
+for i in range(1,20):
+  x=x+i
+  i=i+1
+
+print('x is now', x)
+
+```
 
 
 
@@ -232,14 +268,31 @@ These questions are meant to test what you've learned from the Python Basics tut
 
 3. Using the NumPy package, calculate the value of sin(4), and use the sigfig function from the utility module in aide_design to get your answer to 3 sig-figs. *(Hint: You will need to import these packages. Remember how to do that?)*
 
-<!--- Fill you answer here. --->
+```python
+import numpy
+from aide_design.play import*
+x=numpy.sin(4)
+aide_design.utility.sig(x,3)
 
+```
 
 
 4. Create a `list` of length 5, and verify the length of your list. Once you've done that, turn your `list` into an `array` and apply units of meters to it. After that, create a 5x5 `array`, extract the middle row and middle column. Verify the size of your 2D `array` and apply units of liters to it.
 
-<!--- Fill you answer here. --->
+```python
+import math as m
+x=[1,2,3,4,5]
+len(x)
+from aide_design.play import*
+myArray = np.array(x)
+myArrayUnits = myArray * u.m
 
+myArray = np.array([[1 ,2, 3,4,5], [1,2,3,4, 5], [1 ,2, 3,4,5],[1 ,2, 3,4,5],[1 ,2, 3,4,5]])
+myArray[:,3]
+myArray[3,:]
+np.size(myArray)
+myArrayUnits = myArray * u.liter
+```
 
 
 
@@ -257,17 +310,50 @@ These questions are meant to test what you've learned from the Python Basics tut
 $$ D = \frac{k_BT}{6\pi\eta r} $$
 
 ```python
-from scipy.constants import Boltzmann as kB_sc # I've imported the unitless value for kB from SciPy
+import math as m
+from scipy.constants import Boltzmann as kB_sc
 
-kB = kB_sc * u.joule / u.kelvin # I've given kB units for you in J/K; you can use the kB variable to give you Boltzmann's constant with units
+def Diffuse(T, E, r):
+  T = T * u.kelvin
+  r = r * u.meters
+  D = (kB*T/6/pi/E/r).to_base_units()
+  return D
+if __name__ == '__main__':
+  kB = kB_sc * u.joule / u.kelvin
 
-# Write your code here
+  T=300
+  r=5
+  E=.01
+  print (Diffuse(T,E,r))
+
+
 
 ```
 
 6. You have a pipe with a radius of 0.2 m with water flowing in it at 2 m<sup>3</sup>/s. You want to see how the Reynolds Number changes as viscosity changes due to a change in temperature from 0 to 200<sup>o</sup>C. Create a plot of Reynolds Number against Temperature in Kelvin to show a relationship. Make sure your plot has a title, labeled axes, and axes grid. You can use functions from `physchem` like `pc.re_pipe` and `pc.viscosity_kinematic`. *(Hint: Make an array of temperatures to input into the `pc.viscosity_kinematic` function)*. Make sure to save your plot to your images folder in your personal repository, and display it below using `plt.show()` and an image insertion using a relative file path to the image.
 
-<!--- Fill you answer here. --->
+```python
+import numpy as np
+T = np.arange(273, 473, 10)
+print (type(T))
+v=pc.viscosity_kinematic(T)
+
+Q=2*(u.meter)*(u.meter)*(u.meter)/(u.second)
+D=.4*u.meter
+
+Re=Q*D/v
+plt.plot(T, Re)
+plt.xlabel('Temperature')
+plt.ylabel('Reynolds #')
+plt.title('Re')
+plt.minorticks_on()
+plt.grid(which = 'major')
+plt.grid(which = 'minor')
+plt.savefig('./Images/Re_Plot.png')
+plt.show()
+
+```
+![Re](/Images/Re.png)
 
 # Teletype Basics
 In this section you and your team can practice using Teletype together.
