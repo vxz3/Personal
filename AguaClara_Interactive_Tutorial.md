@@ -361,14 +361,14 @@ In this section you and your team can practice using Teletype together.
 1. Create a portal for your team members to join. Have them write you words of  encouragement in the space below, and be sure they sign their name next to their encouragements.
 
 Good luck with your tutorial! -Philip Akpan
+
 Have better luck with your tutorial - Tigran Mehrabyan
 
 You're doing great as our team lead! -Desiree
 
 2. Have you other team members create a portal for you to join. In their Markdown file, write them something encouraging, and sign your name.
 
-<!--- Fill you answer here. --->
-
+(My comment is on their files)
 
 # GitHub Basics
 Congratulations! You've completed this interactive tutorial. Now all you need to do is save your work and put it on your personal repository. Toggle the Git Tab using `Cntrl + Shift + 9`.
